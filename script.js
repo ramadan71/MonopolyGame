@@ -70,8 +70,8 @@ function play(){
     var dice2 = Math.ceil(Math.random()*6);
 
     document.getElementById("main-message").innerHTML = dice1 + " -- " + dice2 + " --- " + currentPosition[currentPlayer];
-    document.querySelector("#dic1-pic img").setAttribute("src","Images/dice"+dice1+".png");
-    document.querySelector("#dic2-pic img").setAttribute("src","Images/dice"+dice2+".png");
+    document.querySelector("#dic1-pic img").setAttribute("src","./Images/dice"+dice1+".png");
+    document.querySelector("#dic2-pic img").setAttribute("src","./Images/dice"+dice2+".png");
     
     var sum = dice1 +dice2;
     document.getElementById("c"+currentPosition[currentPlayer]+"-p"+currentPlayer).style.backgroundColor = "white";
